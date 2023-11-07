@@ -72,7 +72,7 @@ int main() {
     BankAccount* account1 = bank.findAccount("12345");
     if (account1) {
         account1->deposit(200);
-        account1->withdraw(100);
+        account1->withdraw(50);
         account1->display();
     } else {
         std::cout << "Account not found." << std::endl;
