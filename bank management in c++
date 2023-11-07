@@ -14,7 +14,7 @@ public:
     }
 
     void deposit(double amount) {
-        if (amount > 0) {
+        if (amount > 1) {
             balance += amount;
             std::cout << "Deposited $" << amount << " into account " << accountNumber << std::endl;
         } else {
@@ -66,7 +66,7 @@ public:
 int main() {
     Bank bank;
 
-    bank.addAccount("12345", "John Doe", 1100);
+    bank.addAccount("12345", "John Doe", 100);
     bank.addAccount("67890", "Jane Smith", 501);
 
     BankAccount* account1 = bank.findAccount("12345");
