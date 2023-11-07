@@ -10,7 +10,7 @@ class employee
 
     void setid()
     {
-        salary=122;
+        cin>>salary;
         cout<<"enter the id of employee"<<endl;
         cin>>id;
     }
