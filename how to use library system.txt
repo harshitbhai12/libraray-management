@@ -1,1 +1,1 @@
-simply run code in vs code
+Run librarymanagement.c in vs code
