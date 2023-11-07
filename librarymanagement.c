@@ -4,7 +4,7 @@
 // Structure for storing book information
 struct Book {
     int book_id;
-    char title[100];
+    char title[78];
     char author[100];
     int quantity;
 };
