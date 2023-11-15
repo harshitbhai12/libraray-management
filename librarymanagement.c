@@ -65,27 +65,36 @@ int main()
         }
         if (n == 1)
         {
-
-            printf("Library Management System\n");
-            printf("1. Add a Book\n");
-            printf("2. Display Books\n");
-            printf("3. Exit\n");
-            printf("Enter your choice: ");
-            scanf("%d", &choice);
-
-            switch (choice)
+            printf("Enter password\n");
+            int p;
+            scanf("%d", &p);
+            if (p == 12345)
             {
-            case 1:
-                addBook(library, &bookCount);
-                break;
-            case 2:
-                displayBooks(library, bookCount);
-                break;
-            case 3:
-                printf("Exiting the program. Goodbye!\n");
-                break;
-            default:
-                printf("Invalid choice. Please try again.\n");
+                printf("Library Management System\n");
+                printf("1. Add a Book\n");
+                printf("2. Display Books\n");
+                printf("3. Exit\n");
+                printf("Enter your choice: ");
+                scanf("%d", &choice);
+
+                switch (choice)
+                {
+                case 1:
+                    addBook(library, &bookCount);
+                    break;
+                case 2:
+                    displayBooks(library, bookCount);
+                    break;
+                case 3:
+                    printf("Exiting the program. Goodbye!\n");
+                    break;
+                default:
+                    printf("Invalid choice. Please try again.\n");
+                }
+            }
+            else
+            {
+                printf("Wrong Password\n");
             }
         }
         if (n == 2)
